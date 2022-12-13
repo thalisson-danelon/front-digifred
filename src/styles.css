@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family= Space+Mono & display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+    --ff-primary: 'Space Mono', monospace, sans-serif;
+    --fc-primary: #E8F0C2;
+    --fc-secondary: #000000;
+    --fc-tertiary: #FA263D;
+    --primary: #FA263D;
+    --secondary: #AB1733;
+    --tertiary: #E8F0C2;
+}
+
+ul {
+    list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+th {
+  text-align: left;
+}
