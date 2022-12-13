@@ -4,6 +4,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { TableService } from './components/table-products.service';
 
+
 export interface ProductData {
   id: string;
   title: string;
@@ -25,9 +26,10 @@ export class AppComponent {
   posts: any;
   error: any;
 
+
   constructor(private service: TableService) {
     this.service.getData().subscribe({
-      next: (data: any) => {
+      next: (data) => {
         console.log(data.products);
         this.posts = data.products;
 
@@ -35,11 +37,6 @@ export class AppComponent {
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
       }
-      // ,
-      // (error: any) => {
-      //   this.error = error;
-      //   console.log('ERRO: ', error);
-      // }
   });
   }
 

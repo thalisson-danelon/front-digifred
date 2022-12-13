@@ -9,7 +9,7 @@ export class TableService {
   private url = 'https://dummyjson.com/products';
 
   constructor(private http: HttpClient) {}
-  public getData(): Observable<any> {
-    return this.http.get<any>(this.url);
+  getData(): Observable<any> {
+    return this.http.get(this.url);
   }
 }
